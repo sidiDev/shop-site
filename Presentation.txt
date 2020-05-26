@@ -1,1 +1,1 @@
- hello everyone this is my project is ecommerce site create with me without any framework just html and css and javaScript
+ hello everyone this is my project is ecommerce site create by me without any framework just html and css and javaScript
