@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEE;
+    font-family: 'Jost', sans-serif;
+}
+
+a { text-decoration: none; }
+
+/* =========== { SATRT NAVIGATION BAR } ===========*/
+
+nav {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+nav .site-logo-and-title {
+    margin: 0 5px;
+    float: left;
+}
+
+nav .site-logo-and-title .menu-btn {
+    float: left;
+    width: 40px;
+    margin: 10px 0;
+    display: none;
+    cursor: pointer
+}
+
+nav .site-logo-and-title .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #555;
+    margin: 3px 0;
+}
+
+nav .site-logo-and-title img {
+    width: 35px;
+    height: 35px;
+}
+
+nav .site-logo-and-title h1 {
+    margin: 8px;
+    float: right;
+    font-size: 19px;
+    color: #555;
+}
+
+nav .site-logo-and-title h1::first-letter {
+    font-size: 20px;
+    color: #008b8b;
+}
+
+nav .navigation-container {
+    position: relative;
+}
+
+nav .navigation-container .navigation-links {
+    position: fixed;
+    top: 3.7em;
+    left: 0;
+    z-index: 3;
+    height: 100%;
+    width: 250px;
+    background: #555;
+}
+
+nav .navigation-container .navigation-links ul {
+    list-style: none;
+    margin: 10px 10px;
+    padding: 0;
+}
+
+nav .navigation-container .navigation-links ul li {
+    margin-top: 35px;
+    border-radius: 3px;
+}
+
+nav .navigation-container .navigation-links ul li a {
+    font-size: 18px;
+    color: #FFF;
+}
+
+nav .navigation-container .navigation-links ul li a img {
+    width: 23px;
+    margin: -3px 20px;
+}
+
+nav .navigation-container .navigation-links ul li:nth-child(1) {
+    background-color: #008b8b;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav .navigation-container .cart-and-search-container {
+    display: flex;
+    float: right;
+    margin: 0 20px;
+    transform: translateY(3px);
+}
+
+.search-container-in-small-devices {
+    display: none;
+}
+
+.cart-and-search-container .search-container {
+    display: inline-block;
+    border: solid 2px #F1F1F1;
+    border-radius: 20px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.cart-and-search-container .search-container input {
+    height: 80%;
+    margin: 2px 0;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    float: left;
+    transition: .3s;
+}
+
+.cart-and-search-container .search-container .search-btn {
+    display: inline-block;
+    width: 30px;
+    cursor: pointer;
+}
+
+.cart-and-search-container .search-container .search-btn img {
+    width: 16px;
+    height: 16px;
+    margin: 6px 8px;
+}
+
+.user-container {
+    width: 32px;
+    height: 32px;
+    border: solid 2px #EEE;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.user-container img {
+    width: 22px;
+    height: 22px;
+    margin: 4px 5.4px
+}
+
+/* =========== { END NAVIGATION BAR } ===========*/
+
+/* =========== { START DASHBOARD => STATICS } ===========*/
+
+.e-shop-statics {
+    width: 84%;
+    margin-left: auto; 
+    margin-top: 7em; 
+}
+
+.e-shop-statics-blocks .e-shop-statics-blocks-container {
+    display: flex;
+    text-align: center;
+    float: right;
+    justify-content: space-around;
+    width: 97%;
+}
+
+.static-block-container {
+    background: #FFF;
+    width: 240px;
+    height: 140px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.static-block-container:nth-child(2) .static-block {
+    background: linear-gradient(60deg, #ef5350, #e53935);
+}
+
+.static-block-container:nth-child(3) .static-block {
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+}
+
+.static-block-container:nth-child(4) .static-block {
+    background: linear-gradient(60deg, #26c6da, #00acc1);
+}
+
+
+.static-block-container .static-info {
+    float: right;
+    margin: 18px 20px;
+}
+
+.static-block-container .static-info span {
+    display: block;
+}
+
+.static-block-container .static-info span:first-of-type {
+    font-size: 17px;
+    color: #555;
+}
+
+.static-block-container .static-info span:nth-of-type(2) {
+    font-size: 24px;
+    color: #555;
+    margin-top: 5px; 
+}
+
+
+.static-block-container .static-block {
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+    width: 90px;
+    height: 90px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 20px;
+    transform: translateY(-20px);
+}
+
+.static-block-container .static-block img {
+    width: 45px;
+    margin: 18px 0;
+}
+
+.static-block-container .static-time-update {
+    border-top: 2px solid #EEE;
+    width: 100%;
+}
+
+.static-block-container .static-time-update span {
+    display: block;
+    margin: 15px 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* =========== { END DASHBOARD => STATICS } ===========*/
+
+/* =========== { START DASHBOARD => STATICS WITH CHART } ===========*/
+
+.e-shop-statics-chart {
+    overflow: hidden;
+    width: 99%;
+    transform: translateY(2em);
+}
+
+.e-shop-statics-chart-content {
+    width: 80%;
+    background: #FFF;
+    margin-left: auto;
+}
+
+.e-shop-statics-chart .e-shop-statics-chart-container {
+    display: flex;
+}
+
+.e-shop-statics-chart-container .e-shop-statics-line {
+    width: 60%;
+}
+
+.e-shop-statics-chart-container .e-shop-statics-circel {
+    width: 45%;
+}
+
+.e-shop-statics-chart-container .e-shop-statics-circel span,
+.e-shop-statics-chart-container .e-shop-statics-line span{
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+    display: block;
+}
+
+/* =========== { END DASHBOARD => STATICS WITH CHART } ===========*/
+
+/* =========== { START DASHBOARD => EMPLOYEEES INFO } ===========*/
+
+.employees-info-container  {
+    overflow: hidden;
+    padding-top: 50px;
+    margin-top: 6em;
+    width: 99%;
+}
+
+
+.employees-info-container .employees-info {
+    display: flex;
+    text-align: center;
+    float: right;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.employees-stats-container .list-desc {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    width: 80%;
+    border-radius: 4px;
+    background: #008b8b;
+    color: #FFF;
+}
+
+.employees-stats-container .list-desc p:first-of-type {
+    font-size: 19px;
+}
+
+.employees-stats-container:first-child .list-desc {
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+.employees-stats-container:nth-child(2) .list-desc {
+    background: linear-gradient(60deg, #ab47bc, #8e24aa);
+}
+
+.employees-stats-container {
+    width: 40%;
+    background: #FFF;
+    position: relative;
+}
+.employees-stats-container
+.employees-details-columns,
+.employees-info-columns {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+ .employees-detail-column,
+.employees-info-column {
+    text-align: center;
+    width: 90px;
+}
+
+.employees-stats-container
+.employees-details-columns {
+    margin-top: 5em;
+    color: #ff9800;
+}
+
+/* =========== { END DASHBOARD => EMPLOYEEES INFO } ===========*/
+
+/* =========== { START FOOTER } ===========*/
+
+footer {
+    width: 90%;
+    margin-top: 10px;
+    overflow: hidden;
+    margin-left: auto;
+    font-size: 17px;
+    color: #555;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* =========== { END FOOTER } ===========*/

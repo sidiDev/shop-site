@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wgh@500&display=swap">
+    <link rel="stylesheet" href="CSS Files/dashboard.css">
+    <link rel="stylesheet" href="response files/dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+</head>
+<body>
+
+<!------{ START NAVIGATION BAR }------>
+
+<nav class="navigation-bar">
+    <div class="navigation-container">
+        <div class="site-logo-and-title">
+            <div class="menu-btn" onclick="openClaoseMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="home.html">
+                <img src="icons/logo.png">
+                <h1>E-shop</h1>
+            </a>
+        </div>
+        <div class="navigation-links">
+            <ul>
+                <li><a href="dashboard.html"><img src="icons/dashboard.png">Dashboard</a></li>
+                <li><a href="home.html"><img src="icons/home.png">Home</a></li>
+                <li><a href="products.html"><img src="icons/products.png">Products</a></li>
+                <li><a href="user.html"><img src="icons/user-profile.png">User Profile</a></li>
+                <li><a href="#"><img src="icons/tabelList.png">Tabel list</a></li>
+                <li><a href="#"><img src="icons/notification.png">Notification</a></li>
+            </ul>
+        </div>
+        <div class="search-container-in-small-devices">
+                <div class="search-container-in-small-devices-container">
+                    <img src="icons/back-icon.png">
+                    <div class="search-container">
+                    <input type="text" placeholder="Enter search">
+                    <div class="search-btn">
+                        <img src="icons/search.png">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        <div class="cart-and-search-container">
+            <div class="search-container">
+                <input type="text" class="input" placeholder="Enter search">
+                <div class="search-btn" onclick="showSearch()">
+                    <img src="icons/search.png">
+                </div>
+            </div>
+            <div class="user-container">
+                <img src="icons/user.png">
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!------{ END NAVIGATION BAR }------>
+
+<!------{ START DASHBOARD => STATICS  }------>
+
+<main class="e-shop-statics">
+    <div class="e-shop-statics-blocks">
+        <div class="e-shop-statics-blocks-container">
+            <div class="static-block-container">
+                <div class="static-info">
+                    <span>Revenue</span>
+                    <span>$3.180</span>
+                </div>
+                <div class="static-block">
+                    <img src="icons/revenue.png">
+                </div>
+                <div class="static-time-update">
+                    <span>Last 24 Hours</span>
+                </div>
+            </div>
+
+            <div class="static-block-container">
+                <div class="static-info">
+                    <span>Used Space</span>
+                    <span>49/50 GB</span>
+                </div>
+                <div class="static-block">
+                    <img src="icons/computer.png">
+                </div>
+                <div class="static-time-update">
+                    <span>Get more space</span>
+                </div>
+            </div>
+
+            <div class="static-block-container">
+                <div class="static-info">
+                    <span>Coupon used</span>
+                    <span>+20K</span>
+                </div>
+                <div class="static-block">
+                    <img src="icons/signs.png">
+                </div>
+                <div class="static-time-update">
+                    <span>last update</span>
+                </div>
+            </div>
+
+            <div class="static-block-container">
+                <div class="static-info">
+                    <span>Followers</span>
+                    <span>+280</span>
+                </div>
+                <div class="static-block">
+                    <img src="icons/followers.png">
+                </div>
+                <div class="static-time-update">
+                    <span>Just Updated</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!------{ END DASHBOARD => STATICS }------>
+
+<!------{ START DASHBOARD => STATICS WITH CHART }------>
+
+<main class="e-shop-statics-chart">
+    <div class="e-shop-statics-chart-content">
+        <div class="e-shop-statics-chart-container">
+            <div class="e-shop-statics-circel">
+                <span></span>
+                <canvas id="chart-circel"></canvas>
+            </div>
+            <div class="e-shop-statics-line">
+                <span></span>
+                <canvas id="chart-line"></canvas>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!------{ END DASHBOARD => STATICS WITH CHART }------>
+
+<!------{ START DASHBOARD => EMPLOYEEES INFO }------>
+
+<main class="employees-info-container">
+    <div class="employees-info">
+    <div class="employees-stats-container">
+        <div class="list-desc">
+            <p>Employees Stats</p>
+            <p>New employees on September, 2020</p>
+        </div>
+        <div class="employees-details-columns">
+            <div class="employees-detail-column">
+                <span>ID</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Name</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Salary</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Country</span>
+            </div>
+        </div>
+        <div class="employees-info-columns">
+            <div class="employees-info-column">
+                <span>1</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Sidi</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>25K</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Mauritania</span>
+            </div>
+        </div>
+        <div class="employees-info-columns">
+            <div class="employees-info-column">
+                <span>2</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Taher</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>21K</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Saudia</span>
+            </div>
+        </div>
+        <div class="employees-info-columns">
+            <div class="employees-info-column">
+                <span>3</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Micheal</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>23K</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>America</span>
+            </div>
+        </div>
+        <div class="employees-info-columns">
+            <div class="employees-info-column">
+                <span>4</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Joe</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>20K</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Rusia</span>
+            </div>
+        </div>
+    </div>
+
+<div class="employees-stats-container">
+        <div class="list-desc">
+            <p>Product managers Stats</p>
+            <p>New product managers on September, 2020</p>
+        </div>
+        <div class="employees-details-columns">
+            <div class="employees-detail-column">
+                <span>ID</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Name</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Salary</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Country</span>
+            </div>
+        </div>
+        <div class="employees-info-columns">
+            <div class="employees-info-column">
+                <span>1</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Sinho</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>19K</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Island</span>
+            </div>
+        </div>
+        <div class="employees-info-columns">
+            <div class="employees-info-column">
+                <span>2</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Ahmed</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>18K</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Egypt</span>
+            </div>
+        </div>
+        <div class="employees-info-columns">
+            <div class="employees-info-column">
+                <span>3</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Daniel</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>16K</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>America</span>
+            </div>
+        </div>
+        <div class="employees-info-columns">
+            <div class="employees-info-column">
+                <span>4</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Philip Chaney</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>13K</span>
+            </div>
+            <div class="employees-detail-column">
+                <span>Span</span>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</main>
+
+<!------{ END DASHBOARD => EMPLOYESS INFO }------>
+
+<!------{ START FOOTER }------>
+
+<footer>
+    <p>© 2020 E-shop All Rights Reserved</p>
+</footer>
+<!------{ END FOOTER }------>
+
+<script src="JavaScript Files/dashboard.js"></script>
+</body>
+</html>

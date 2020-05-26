@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wgh@500&display=swap">
+    <link rel="stylesheet" href="CSS Files/user.css">
+    <link rel="stylesheet" href="response files/user.css">
+
+</head>
+<body>
+
+<!------{ START NAVIGATION BAR }------>
+
+<nav class="navigation-bar">
+    <div class="navigation-container">
+        <div class="site-logo-and-title">
+            <div class="menu-btn" onclick="openClaoseMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="home.html">
+                <img src="icons/logo.png">
+                <h1>E-shop</h1>
+            </a>
+        </div>
+        <div class="navigation-links">
+            <ul>
+                <li><a href="dashboard.html"><img src="icons/dashboard.png">Dashboard</a></li>
+                <li><a href="home.html"><img src="icons/home.png">Home</a></li>
+                <li><a href="products.html"><img src="icons/products.png">Products</a></li>
+                <li><a href="#"><img src="icons/user-profile.png">User Profile</a></li>
+                <li><a href="#"><img src="icons/tabelList.png">Tabel list</a></li>
+                <li><a href="#"><img src="icons/notification.png">Notification</a></li>
+            </ul>
+        </div>
+        <div class="search-container-in-small-devices">
+                <div class="search-container-in-small-devices-container">
+                    <img src="icons/back-icon.png">
+                    <div class="search-container">
+                    <input type="text" placeholder="Enter search">
+                    <div class="search-btn">
+                        <img src="icons/search.png">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        <div class="cart-and-search-container">
+            <div class="search-container">
+                <input type="text" class="input" placeholder="Enter search">
+                <div class="search-btn" onclick="showSearch()">
+                    <img src="icons/search.png">
+                </div>
+            </div>
+            <div class="user-container">
+                <img src="icons/user.png">
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!------{ END NAVIGATION BAR }------>
+
+<!------{ START EDIT PROFILE }------>
+
+<main class="edit-profile-container">
+    <div class="edit-profile">
+        <div class="edit-forms">
+            <label for="upload-image">
+                <img src="icons/profile.png">
+            </label>
+            <input id="upload-image" type="file">
+            <span>Name</span>
+            <input type="text" class="input" placeholder="Enter your name">
+            <span>Country</span>
+            <input type="text" class="input" placeholder="Enter your country name">
+            <span>About You</span>
+            <textarea class="textarea"></textarea>
+            <button>Edit</button>
+            <span class="note"></span>
+        </div>
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="icons/user-profile (2).png">
+                </div>
+                <div class="profile-info-container">
+                    <p>Sidi</p>
+                    <p>Mauritania</p>
+                    <div class="about-container">
+                        <p>
+                            hello my name is sidi jeddou i have 16 or 17 years old iam front end web developer
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!------{ END EDIT PROFILE }------>
+
+<script src="JavaScript Files/user.js"></script>
+</body>
+</html>

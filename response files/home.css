@@ -1,0 +1,358 @@
+/* ===== { START RESPONSE ON SMALL DEVICES } ===== */
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    
+/* =========== { SATRT NAVIGATION BAR } ===========*/
+
+nav .site-logo-and-title .menu-btn {
+    float: left;
+    display: block;
+}
+
+nav .navigation-container .navigation-links {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 3em;
+    left: 0;
+    background: #FFF;
+    z-index: 3;
+    transition: .3s;
+}
+
+nav .navigation-container .navigation-links ul {
+    display: block;
+    margin: 2em 0;
+}
+
+nav .navigation-container .navigation-links ul li {
+    margin: 15px 0;
+}
+
+nav .navigation-container .open-and-close-menu {
+    height: 200px;
+}
+
+nav .navigation-container .cart-and-search-container {
+    margin: 5px 0;
+}
+
+.cart-and-search-container .search-container .input {
+    display: none;
+}
+
+.cart-and-search-container .search-container-in-small-devices {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #FFF;
+}
+
+.search-container-in-small-devices .search-container-in-small-devices-container {
+    margin: 10px 0;
+}
+
+.search-container-in-small-devices .search-container-in-small-devices-container input {
+    width: 70%;
+    height: 30px;
+    margin: -1px 5px;
+    font-size: 15px;
+}
+
+.search-container-in-small-devices .search-container-in-small-devices-container img {
+    width: 25px;
+    float: left;
+    margin: 4px 5px;
+}
+
+.cart-and-search-container .show-search-form {
+    display: block;
+}
+
+/* =========== { END NAVIGATION BAR } ===========*/
+
+/* =========== { SATRT SERVICES DESCRIPTION } ===========*/
+
+.services-description h2 { font-size: 20px; }
+
+.services-description .services-description-container  {
+    grid-template-columns: repeat(1,1fr);
+}
+
+.services-description-container .service-info-container {
+    margin: 5px auto;
+}
+
+/* =========== { END SERVICES DESCRIPTION } ===========*/
+
+/* =========== { START PRODUCTS CONTENT } ===========*/
+
+.products-content .products-container {
+    margin-top: 3.5em;
+    display: grid;
+    grid-template-columns: repeat(1,1fr)
+}
+
+/* =========== { END PRODUCTS CONTENT } ===========*/
+
+/* =========== { START FOOTER CONTENT } ===========*/
+
+.footer-content .footer-container {
+    display: block;
+    text-align: center;
+}
+
+.footer-container .contacts-container .social-media {
+    justify-content: center;
+}
+
+.footer-container .site-apps .site-app-container { margin: 3px auto; }
+
+/* =========== { END FOOTER CONTENT } ===========*/
+
+}
+
+/* ===== { END RESPONSE ON SMALL DEVICES } ===== */
+
+/* ===== { START RESPONSE ON MEDIAN DEVICES } ===== */
+
+@media screen and (min-width: 501px) and (max-width: 670px) {
+    
+/* =========== { SATRT NAVIGATION BAR } ===========*/
+    
+nav .site-logo-and-title .menu-btn {
+    float: left;
+    display: block;
+}
+    
+nav .navigation-container .navigation-links {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 3em;
+    left: 0;
+    background: #FFF;
+    z-index: 3;
+    transition: .3s;
+}
+    
+nav .navigation-container .navigation-links ul {
+    display: block;
+    margin: 2em 0;
+}
+    
+nav .navigation-container .navigation-links ul li { margin: 15px 0; }
+    
+nav .navigation-container .open-and-close-menu { height: 200px; }
+    
+nav .navigation-container .cart-and-search-container { margin: 5px 0; }
+
+.cart-and-search-container .search-container-in-small-devices { display: none; }
+    
+/* =========== { END NAVIGATION BAR } ===========*/
+    
+/* =========== { SATRT SERVICES DESCRIPTION } ===========*/
+    
+.services-description h2 { font-size: 20px; }
+    
+.services-description .services-description-container  {
+    grid-template-columns: repeat(2,1fr);
+}
+    
+.services-description-container .service-info-container { margin: 5px auto; }
+    
+/* =========== { END SERVICES DESCRIPTION } ===========*/
+    
+/* =========== { START PRODUCTS CONTENT } ===========*/
+    
+.products-content .products-container {
+    margin-top: 3.5em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+}
+    
+/* =========== { END PRODUCTS CONTENT } ===========*/
+    
+/* =========== { START FOOTER CONTENT } ===========*/
+    
+.footer-content .footer-container {
+    display: block;
+    text-align: center;
+}
+    
+.footer-container .contacts-container .social-media { justify-content: center; }
+    
+    .footer-container .site-apps .site-app-container { margin: 3px auto; }
+    
+/* =========== { END FOOTER CONTENT } ===========*/
+    
+}
+    
+/* ===== { END RESPONSE ON MEDIAN DEVICES } ===== */
+
+
+/* ===== { START RESPONSE ON LARGE DEVICES } ===== */
+
+@media screen and (min-width: 671px) and (max-width: 809px) {
+    
+/* =========== { SATRT NAVIGATION BAR } ===========*/
+    
+nav .site-logo-and-title .menu-btn {
+    float: left;
+    display: block;
+}
+    
+nav .navigation-container .navigation-links {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 3em;
+    left: 0;
+    background: #FFF;
+    z-index: 3;
+    transition: .3s;
+}
+    
+nav .navigation-container .navigation-links ul {
+    display: block;
+    margin: 2em 0;
+}
+    
+nav .navigation-container .navigation-links ul li { margin: 15px 0; }
+    
+nav .navigation-container .open-and-close-menu { height: 200px; }
+    
+nav .navigation-container .cart-and-search-container { margin: 5px 0; }
+
+.cart-and-search-container .search-container-in-small-devices { display: none; }
+    
+/* =========== { END NAVIGATION BAR } ===========*/
+    
+/* =========== { SATRT SERVICES DESCRIPTION } ===========*/
+    
+.services-description h2 { font-size: 20px; }
+    
+.services-description .services-description-container  {
+    grid-template-columns: repeat(2,1fr);
+}
+    
+.services-description-container .service-info-container { margin: 5px auto; }
+    
+/* =========== { END SERVICES DESCRIPTION } ===========*/
+    
+/* =========== { START PRODUCTS CONTENT } ===========*/
+    
+.products-content .products-container {
+    margin-top: 3.5em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+}
+    
+/* =========== { END PRODUCTS CONTENT } ===========*/
+    
+/* =========== { START FOOTER CONTENT } ===========*/
+    
+    
+.footer-container .contacts-container .social-media { justify-content: center; }
+    
+    .footer-container .site-apps .site-app-container { margin: 3px auto; }
+    
+/* =========== { END FOOTER CONTENT } ===========*/
+    
+}
+    
+/* ===== { END RESPONSE ON LARGE DEVICES } ===== */
+
+
+/* ===== { START RESPONSE ON LARGE DEVICES } ===== */
+
+@media screen and (min-width: 810px) and (max-width: 1200px) {
+    
+/* =========== { SATRT NAVIGATION BAR } ===========*/
+ 
+/* =========== { END NAVIGATION BAR } ===========*/
+    
+/* =========== { SATRT SERVICES DESCRIPTION } ===========*/
+    
+.services-description h2 { font-size: 20px; }
+    
+.services-description .services-description-container  {
+    grid-template-columns: repeat(2,1fr);
+}
+    
+.services-description-container .service-info-container { margin: 5px auto; }
+    
+/* =========== { END SERVICES DESCRIPTION } ===========*/
+    
+/* =========== { START PRODUCTS CONTENT } ===========*/
+    
+.products-content .products-container {
+    margin-top: 3.5em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+}
+    
+/* =========== { END PRODUCTS CONTENT } ===========*/
+    
+/* =========== { START FOOTER CONTENT } ===========*/
+    
+    
+.footer-container .contacts-container .social-media { justify-content: center; }
+    
+    .footer-container .site-apps .site-app-container { margin: 3px auto; }
+    
+/* =========== { END FOOTER CONTENT } ===========*/
+    
+}
+    
+/* ===== { END RESPONSE ON LARGE DEVICES } ===== */
+
+
+/* ===== { START RESPONSE ON LARGE DEVICES } ===== */
+
+@media screen and (min-width: 1201px) and (max-width: 1310px) {
+    
+/* =========== { SATRT NAVIGATION BAR } ===========*/
+ 
+/* =========== { END NAVIGATION BAR } ===========*/
+    
+/* =========== { SATRT SERVICES DESCRIPTION } ===========*/
+    
+.services-description h2 { font-size: 20px; }
+    
+.services-description .services-description-container  {
+    grid-template-columns: repeat(4,1fr);
+}
+    
+.services-description-container .service-info-container { margin: 5px auto; }
+    
+/* =========== { END SERVICES DESCRIPTION } ===========*/
+    
+/* =========== { START PRODUCTS CONTENT } ===========*/
+    
+.products-content .products-container {
+    margin-top: 3.5em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+    
+/* =========== { END PRODUCTS CONTENT } ===========*/
+    
+/* =========== { START FOOTER CONTENT } ===========*/
+    
+    
+.footer-container .contacts-container .social-media { justify-content: center; }
+    
+    .footer-container .site-apps .site-app-container { margin: 3px auto; }
+    
+/* =========== { END FOOTER CONTENT } ===========*/
+    
+}
+    
+/* ===== { END RESPONSE ON LARGE DEVICES } ===== */

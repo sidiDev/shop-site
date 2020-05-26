@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEE;
+    font-family: 'Jost', sans-serif;
+}
+
+a { text-decoration: none; }
+
+/* =========== { SATRT NAVIGATION BAR } ===========*/
+
+nav {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+nav .site-logo-and-title {
+    margin: 0 5px;
+    float: left;
+}
+
+nav .site-logo-and-title .menu-btn {
+    float: left;
+    width: 40px;
+    margin: 10px 0;
+    display: none;
+    cursor: pointer
+}
+
+nav .site-logo-and-title .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #555;
+    margin: 3px 0;
+}
+
+nav .site-logo-and-title img {
+    width: 35px;
+    height: 35px;
+}
+
+nav .site-logo-and-title h1 {
+    margin: 8px;
+    float: right;
+    font-size: 19px;
+    color: #555;
+}
+
+nav .site-logo-and-title h1::first-letter {
+    font-size: 20px;
+    color: #008b8b;
+}
+
+nav .navigation-container {
+    position: relative;
+}
+
+nav .navigation-container .navigation-links {
+    position: fixed;
+    top: 3.7em;
+    left: 0;
+    z-index: 3;
+    height: 100%;
+    width: 250px;
+    background: #555;
+}
+
+nav .navigation-container .navigation-links ul {
+    list-style: none;
+    margin: 10px 10px;
+    padding: 0;
+}
+
+nav .navigation-container .navigation-links ul li {
+    margin-top: 35px;
+    border-radius: 3px;
+}
+
+nav .navigation-container .navigation-links ul li a {
+    font-size: 18px;
+    color: #FFF;
+}
+
+nav .navigation-container .navigation-links ul li a img {
+    width: 23px;
+    margin: -3px 20px;
+}
+
+nav .navigation-container .navigation-links ul li:nth-child(4) {
+    background-color: #008b8b;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav .navigation-container .cart-and-search-container {
+    display: flex;
+    float: right;
+    margin: 0 20px;
+    transform: translateY(3px);
+}
+
+.search-container-in-small-devices {
+    display: none;
+}
+
+.cart-and-search-container .search-container {
+    display: inline-block;
+    border: solid 2px #F1F1F1;
+    border-radius: 20px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.cart-and-search-container .search-container input {
+    height: 80%;
+    margin: 2px 0;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    float: left;
+    transition: .3s;
+}
+
+.cart-and-search-container .search-container .search-btn {
+    display: inline-block;
+    width: 30px;
+    cursor: pointer;
+}
+
+.cart-and-search-container .search-container .search-btn img {
+    width: 16px;
+    height: 16px;
+    margin: 6px 8px;
+}
+
+.user-container {
+    width: 32px;
+    height: 32px;
+    border: solid 2px #EEE;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.user-container img {
+    width: 22px;
+    height: 22px;
+    margin: 4px 5.4px
+}
+
+/* =========== { END NAVIGATION BAR } ===========*/
+
+/* =========== { START EDIT PROFILE } ===========*/
+
+.edit-profile-container {
+    width: 80%;
+    margin-left: auto;
+    margin-top: 6em;
+}
+
+.edit-profile-container .edit-profile {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.edit-profile .edit-forms {
+    width: 350px;
+    padding: 10px;
+    background-color: #FFF;
+    text-align: center;
+    margin: auto;
+}
+
+.edit-profile .edit-forms label {
+    cursor: pointer;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 2px #EEE;
+    margin: auto;
+}
+
+.edit-profile .edit-forms label img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#upload-image {
+    display: none;
+}
+
+.edit-profile .edit-forms span {
+    display: block;
+    margin-top: 20px; 
+    font-size: 17px;
+    color: rgb(68, 68, 68);
+}
+
+.edit-profile .edit-forms .note {
+    color: #ff0000;
+}
+
+.edit-profile .edit-forms input {
+    outline: none;
+    border: solid 2px #EEE;
+    border-radius: 4px;
+    padding: 8px;
+    width: 80%;
+    margin: 10px 0;
+}
+
+.edit-profile .edit-forms textarea {
+    width: 83%;
+    height: 120px;
+    outline: none;
+    resize: none;
+    border: solid 2px #EEE;
+    margin: 10px 0;
+}
+
+.edit-profile .edit-forms button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #008b8b;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+    width: 60%;
+}
+
+.edit-profile .profile-container {
+    width: 350px;
+    padding: 10px;
+    background-color: #FFF;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+.edit-profile .profile-container .profile-image {
+    width: 65px;
+    height: 65px;
+    border: solid 2px #EEE;
+    border-radius: 50%;
+    position: absolute;
+    top: -34px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.edit-profile .profile-container .profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.edit-profile .profile-container
+.profile-info-container {
+    margin-top: 2.5em;
+}
+
+
+.edit-profile .profile-container p {
+    font-size: 17px;
+    color: rgb(68, 68, 68);
+}
+
+.edit-profile .profile-container 
+.about-container {
+    word-wrap: break-word;
+}
+
+/* =========== { END EDIT PROFILE } ===========*/

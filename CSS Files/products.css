@@ -1,0 +1,624 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEE;
+    font-family: 'Jost', sans-serif;
+}
+
+a { text-decoration: none; }
+
+/* =========== { SATRT NAVIGATION BAR } ===========*/
+
+nav {
+    padding: 10px;
+    background-color: #FFF;
+}
+
+nav .site-logo-and-title {
+    margin: 0 5px;
+    float: left;
+}
+
+nav .site-logo-and-title .menu-btn {
+    float: left;
+    width: 40px;
+    margin: 10px 0;
+    display: none;
+}
+
+nav .site-logo-and-title .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #555;
+    margin: 3px 0;
+}
+
+nav .site-logo-and-title img {
+    width: 35px;
+    height: 35px;
+}
+
+nav .site-logo-and-title h1 {
+    margin: 8px;
+    float: right;
+    font-size: 19px;
+    color: #555;
+}
+
+nav .site-logo-and-title h1::first-letter {
+    font-size: 20px;
+    color: #008b8b;
+}
+
+nav .navigation-container {
+    text-align: center;
+}
+
+nav .navigation-container .navigation-links {
+    display: flex;
+    margin: 5px auto;
+    text-align: center;
+    display: inline-block;
+}
+
+nav .navigation-container .navigation-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav .navigation-container .navigation-links ul li a {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+}
+nav .navigation-container .navigation-links
+ ul li:nth-child(2) a {
+    color: #008b8b;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+nav .navigation-container .cart-and-user-container {
+    display: flex;
+    float: right;
+}
+
+.cart-and-user-container .user-container {
+    display: inline-block;
+    border: solid 2px #F1F1F1;
+    border-radius: 20px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+
+
+.cart-and-user-container .user-container .user-btn {
+    display: inline-block;
+    width: 30px;
+    cursor: pointer
+}
+
+.cart-and-user-container .user-container .user-btn img {
+    width: 16px;
+    height: 16px;
+    margin: 6px 8px;
+}
+
+.cart-and-user-container .cart-container {
+    display: flex;
+    justify-content: space-around;
+    height: 29px;
+    width: 45px;
+    border: solid 2px #EEE;
+    border-radius: 20px;
+    cursor: pointer
+}
+
+.cart-and-user-container .cart-container img {
+    width: 18px;
+    height: 18px;
+    margin: 5px 0;
+}
+
+.cart-and-user-container .cart-container span {
+    display: block;
+    margin: 6px 0;
+    color: #008b8b;
+    font-weight: bold
+}
+
+/* =========== { END NAVIGATION BAR } ===========*/
+
+/* =========== { SATRT SHOPPING CART } ===========*/
+
+.shooping-cart {
+    margin: 2em auto;
+    width: 80%;
+}
+
+.shooping-cart-container {
+    display: none;
+}
+
+.shooping-cart-container-by-js {
+    display: flex;
+    justify-content: space-around;
+}
+
+.shooping-cart .shopping-cart-alert {
+    background: #FFF;
+    padding: 10px;
+    text-align: center;
+    width: 89%;
+    margin: auto;
+}
+
+.shooping-cart .shopping-cart-alert img {
+    width: 50px;
+}
+.shooping-cart .shopping-cart-alert p:first-of-type {
+    font-size: 20px;
+    color: #555;
+}
+
+.shooping-cart .shopping-cart-alert p:nth-of-type(2) {
+    color: #555;
+    font-size: 16px;
+}
+
+.shooping-cart .shopping-cart-alert p a {
+    color: #008b8b;
+}
+
+.hide-sopping-cart-alert {
+    display: none;
+}
+
+.shooping-cart .your-product {
+    font-size: 22px;
+    font-weight: 600;
+    color: #555;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.shooping-cart p span {
+    color: #008b8b;
+}
+
+.shooping-cart .your-product:before {
+    position: absolute;
+    content: '';
+    width: 6.8em;
+    height: 3px;
+    top: 1.7em;
+    margin: auto;
+    background: #008b8b;
+}
+
+
+.shooping-cart-container .products-container {
+    width: 60%;
+    padding: 10px;
+    margin: 3em 0;
+    margin-bottom: 20em;
+    background: #FFF;
+}
+
+.shooping-cart-container .products-container
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 2px #EEE;
+}
+
+.shooping-cart-container .products-container
+.product-container:first-child {
+    border-top: none;
+}
+
+.product-container .product-image {
+    width: 150px;
+    height: 100px;
+}
+
+.product-container .product-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-container .remove-product-btn {
+    margin-top: 1.5em;
+    padding: 5px;
+    border: solid 2px #EEE;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.product-container .remove-product-btn .remove-btn {
+    display: block;
+    cursor: pointer;
+    margin: -4px 2px;
+    font-size: 25px;
+    color: #ff0000;
+}
+
+.product-container .product-info-container {
+    display: flex
+}
+
+.product-container .product-info,
+.product-container .product-details {
+    margin: 20px 0;
+    width: 200px;
+}
+
+.product-container .product-info span,
+.product-container .product-details span {
+    display: block;
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 8px;
+}
+
+.product-container .product-price span {
+    display: block;
+    color: #008b8b;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 3em 0;
+}
+
+.products-container .products-prices-details {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-bottom: 10px; 
+    border-top: 2px solid #EEE
+}
+
+.products-container .products-prices-details 
+.home-page-button a {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+
+.products-container .products-prices-details 
+.home-page-button button {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    padding: 8px;
+    border: solid 2px #EEE;
+    outline: none;
+    background: #FFF;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.products-container .products-prices-details 
+.home-page-button button:hover {
+    color: #008b8b;
+    border: solid 2px #008b8b;
+}
+
+.products-container .products-prices-details 
+.prices-total span {
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.products-container .products-prices-details 
+.prices-total span:nth-child(2) {
+    color: #008b8b;
+}
+
+.shooping-cart-container .coupon-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #EEE;
+}
+
+.shooping-cart-container .coupon-container p {
+    margin-top: 25px; 
+    color: rgb(51, 51, 51);
+    font-size: 17px;
+}
+
+.coupon-container .coupon-form {
+    margin-top: 20px; 
+}
+
+.coupon-container .coupon-form input {
+    outline: none;
+    padding: 8px;
+    border: solid 2px #EEE;
+    border-radius: 5px;
+    width: 240px;
+    float: left;
+    margin: 0 10px;
+}
+
+.coupon-container .coupon-form button {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #008b8b;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 25px; 
+    cursor: pointer; 
+}
+
+.note-coupone {
+    color: #ff0000;
+    font-size: 15px;
+}
+
+.prices-total #coupon {
+    color: #ff0000;
+}
+
+.shooping-cart-container .payment-form {
+    margin: 35px 0;
+    padding: 20px;
+    width: 30%;
+    display: inline-block;
+}
+
+.shooping-cart-container .payment-form
+.pay-by-paypal {
+    padding: 20px;
+    background-color: #FFF;
+}
+
+.shooping-cart-container .payment-form
+.pay-by-paypal p,
+.shooping-cart-container .payment-form
+.pay-by-visa p {
+    font-size: 18px;
+}
+
+.shooping-cart-container .payment-form
+.pay-by-paypal span {
+    display: block;
+    color: #555;
+}
+
+.shooping-cart-container .payment-form
+.pay-by-paypal input {
+    margin: 10px 0;
+    outline: none;
+    border: solid 2px rgb(190, 190, 190);
+    padding: 8px;
+    width: 80%;
+}
+
+.shooping-cart-container .payment-form
+.pay-by-visa {
+    background: #FFF;
+    padding: 20px;
+    display: none;
+}
+
+.shooping-cart-container .payment-form
+.pay-by-visa span {
+    display: block;
+}
+
+.shooping-cart-container .payment-form
+.pay-by-visa input {
+    width: 80%;
+    padding: 8px;
+    margin: 8px 0;
+    outline: none;
+    border: solid 2px rgb(190, 190, 190) 
+}
+
+.shooping-cart-container .payment-form
+.pay-by-visa .expiry-date-security-code {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shooping-cart-container .payment-form
+.pay-by-visa .expiry-date-security-code input {
+    margin-right: 5px;
+    border: solid 2px rgb(190, 190, 190) 
+}
+
+
+.check-payment-container {
+    background-color: #FFF;
+    margin: 5px 0;
+    padding: 20px
+}
+
+.check-payment-container .check-payment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.check-payment .payment-option {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.check-payment .payment-option:nth-child(2) {
+    float: right;
+}
+
+.check-payment .payment-option input {
+    float: left;
+    outline: none;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.check-payment .payment-option input::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -5px;
+    left: -10px;
+    background: #EEE;
+}
+
+.check-payment .payment-option input:checked + label::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    left: -30.3px;
+    border-radius: 50%;
+    background: #008b8b;
+}
+
+.check-payment .payment-option input:checked + label::after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 7px;
+    top: 1px;
+    left: -23px;
+    border: 3px solid #FFF;
+    border-left: transparent;
+    border-top: transparent;
+    transform: rotate(32deg);
+}
+
+
+.check-payment .payment-option label {
+    position: relative;
+    float: right;
+}
+
+.check-payment .payment-option img {
+    width: 75px;
+    cursor: pointer;
+    margin: -2em 0;
+}
+
+.check-payment .payment-option:nth-child(2) img {
+    width: 65px;
+    margin: -1.7em 8px;
+}
+
+.check-payment .payment-option:nth-child(2) input:checked + label::before {
+    left: -25px;
+}
+
+.check-payment .payment-option:nth-child(2) input:checked + label::after {
+    left: -18px;
+}
+
+.check-payment-container .buy-button {
+    margin: auto;
+}
+
+.check-payment-container .buy-button button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #008b8b;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600
+}
+
+/* =========== { END SHOPPING CART } ===========*/
+
+/* =========== { END SHOPPING CART } ===========*/
+
+.get-coupon-cover,
+.alert-coupon-cover {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    display: none;
+}
+
+.alert-coupon-cover {
+    display: none
+}
+
+.get-coupon-cover .get-coupon-container,
+.alert-coupon-container {
+    display: inline-block;
+    background: #FFF;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 12em 0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.767);
+}
+
+.get-coupon-cover .get-coupon-container p {
+    width: 240px;
+    padding: 5px;
+    font-size: 17px;
+    color: rgb(71, 71, 71);
+    border: solid 2px #EEE;
+    float: left;
+    margin: 0;
+}
+
+.alert-coupon-container p {
+    width: 240px;
+    padding: 5px;
+    font-size: 17px;
+    color: rgb(71, 71, 71);
+    float: left;
+    margin: 0;
+}
+
+.get-coupon-cover .copy-coupon-btn {
+    background: #008b8b;
+    border-radius: 5px;
+    float: right;
+    margin: 0;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.alert-coupon-container .close-coupon-btn {
+    font-size: 28px;
+    color: #ff0000;
+    cursor: pointer
+}
+
+.get-coupon-cover .copy-coupon-btn img {
+    width: 20px;
+    height: 20px;
+}

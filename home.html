@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wgh@500&display=swap">
+    <link rel="stylesheet" href="CSS Files/home.css">
+    <link rel="stylesheet" href="response files/home.css">
+
+</head>
+<body>
+
+<!------{ START NAVIGATION BAR }------>
+
+    <nav class="navigation-bar">
+        <div class="navigation-container">
+            <div class="site-logo-and-title">
+                <div class="menu-btn" onclick="openClaoseMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="home.html">
+                    <img src="icons/logo.png">
+                    <h1>E-shop</h1>
+                </a>
+            </div>
+            <div class="navigation-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a style="cursor: pointer" onclick="scrollToFooter()">Follow us</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="cart-and-search-container">
+                <div class="search-container">
+                    <input type="text" class="input" placeholder="Enter search">
+                    <div class="search-btn" onclick="showSearch()">
+                        <img src="icons/search.png">
+                    </div>
+                    <div class="search-container-in-small-devices">
+                        <div class="search-container-in-small-devices-container">
+                            <img src="icons/back-icon.png">
+                            <div class="search-container">
+                            <input type="text" placeholder="Enter search">
+                            <div class="search-btn">
+                                <img src="icons/search.png">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="products.html">
+                <div class="cart-container">
+                    <img src="icons/cart.png">
+                    <span>0</span>
+                </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!------{ END NAVIGATION BAR }------>
+
+<!------{ START HEADER }------>
+    
+    <header class="header">
+        <img  src="images/cover-1.png">
+        <div class="header-container">
+            <h1>E-shop</h1>
+            <p>
+                Here is the perfect place to shopping in safety<br>
+                get your products with good prices
+            </p>
+        </div>
+        <div class="sliding-points">
+            <div class="sliding-points-container">
+                <span class="sliding-point"></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+<!------{ END HEADER }------>
+
+<!------{ SATRT SERVICES DESCRIPTION }------>
+
+    <main class="services-description">
+        <h2>Popular <span>Brands</span></h2>
+        <div class="services-description-container">
+            <div class="service-info-container">
+                <div class="service-img">
+                    <img src="icons/trucking.png">
+                </div>
+                <p>Free Worldwide Shipping</p>
+                <p>Free shipping for all orders $100</p>
+            </div>
+
+            <div class="service-info-container">
+                    <div class="service-img">
+                        <img src="icons/back-money.png">
+                    </div>
+                    <p>Money Back Guarantee</p>
+                    <p>We return money within 30 days</p>
+            </div>
+
+            <div class="service-info-container">
+                    <div class="service-img">
+                        <img src="icons/support.png">
+                    </div>
+                    <p>2/7 Customer Support</p>
+                    <p>Friendly 24/7 customer support</p>
+            </div>
+
+            <div class="service-info-container">
+                    <div class="service-img">
+                        <img src="icons/credit-card.png">
+                    </div>
+                    <p>Secure Online Payment</p>
+                    <p>We posess SSL / Secure Certificate</p>
+            </div>
+
+        </div>
+    </main>
+
+<!------{ END SERVICES DESCRIPTION }------>
+
+<!------{ START PRODUCTS CONTENT }------>
+
+<main class="products-content">
+    <h2>Products</h2>
+    <div class="products-container">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-1.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star-x.png">
+                    <img src="icons/star-x.png">
+                </div>
+                <p>Heades</p>
+                <span>$</span><span>90</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-2.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star-x.png">
+                    <img src="icons/star-x.png">
+                </div>
+                <p>Sport shoes</p>
+                <span>$</span><span>100</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-3.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                </div>
+                <p>Windows 10</p>
+                <span>$</span><span>950</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-4.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                </div>
+                <p>Iphone 11</p>
+                <span>$</span><span>450</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-5.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star-x.png">
+                    <img src="icons/star-x.png">
+                </div>
+                <p>Watch pro</p>
+                <span>$</span><span>70</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-6.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star-x.png">
+                    <img src="icons/star-x.png">
+                    <img src="icons/star-x.png">
+                </div>
+                <p>Harpik</p>
+                <span>$</span><span>15</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-7.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star-x.png">
+                    <img src="icons/star-x.png">
+                </div>
+                <p>Camera 10 pro</p>
+                <span>$</span><span>150</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-8.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star-x.png">
+                    <img src="icons/star-x.png">
+                </div>
+                <p>Pingo</p>
+                <span>$</span><span>80</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-9.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star-x.png">
+                    <img src="icons/star-x.png">
+                </div>
+                <p>Molar</p>
+                <span>$</span><span>190</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-10.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star-x.png">
+                </div>
+                <p>Advenced molar</p>
+                <span>$</span><span>199</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-11.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star-x.png">
+                </div>
+                <p>Play station 4</p>
+                <span>$</span><span>320</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product-img-12.png">
+            </div>
+            <div class="product-info">
+                <div class="product-prizng">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star.png">
+                    <img src="icons/star-x.png">
+                </div>
+                <p>Steve jobs life</p>
+                <span>$</span><span>105</span>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!------{ END PRODUCTS CONTENT }------>
+
+<!------{ START FOOTER CONTENT }------>
+
+    <footer class="footer-content">
+        <div class="footer-container">
+            <div class="contacts-container">
+                <li><a>Mobile: +222 26534764</a></li>
+                <li><a href="#">e-shop@support.com</a></li>
+                <li><a href="#">support.@shop.io</a></li>
+                <div class="social-media">
+                    <a href="#">
+                    <div class="media-form">
+                        <img src="icons/face.png">
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="media-form">
+                        <img src="icons/twitter.png">
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="media-form">
+                        <img src="icons/linked.png">
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="media-form">
+                        <img src="icons/insta.png">
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="site-apps">
+                <div class="site-app-container">
+                    <div class="app-icon">
+                        <img src="icons/appel.png">
+                    </div>
+                    <div class="download-app">
+                        <p>Download on the</p>
+                        <p>App Store</p>
+                    </div>
+                </div>
+                <div class="site-app-container">
+                    <div class="app-icon">
+                        <img src="icons/social-media (1).png">
+                    </div>
+                    <div class="download-app">
+                        <p>Download on the</p>
+                        <p>Google play</p>
+                    </div>
+                </div>
+                <div class="site-app-container">
+                    <div class="app-icon">
+                        <img src="icons/window.png">
+                    </div>
+                    <div class="download-app">
+                        <p>Download on the</p>
+                        <p>Windows Store</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="follow-form">
+                <p>Please follow us for more products and perfect prices</p>
+                <div class="follow-form-container">
+                    <input type="text" placeholder="Enter your email">
+                    <button>Follow</button>
+                </div>
+            </div>
+        </div>
+        <p class="site-copy-right">&copy 2020 E-shop All Rights Reserved</p>
+    </footer>
+
+<!------{ END FOOTER CONTENT }------>
+
+<script src="JavaScript Files/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wgh@500&display=swap">
+    <link rel="stylesheet" href="CSS Files/products.css">
+    <link rel="stylesheet" href="response files/product.css">
+</head>
+<body>
+    
+<!------{ START NAVIGATION BAR }------>
+
+<nav class="navigation-bar">
+        <div class="navigation-container">
+            <div class="site-logo-and-title">
+                <div class="menu-btn" onclick="openClaoseMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="home.html">
+                    <img src="icons/logo.png">
+                    <h1>E-shop</h1>
+                </a>
+            </div>
+            <div class="navigation-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="cart-and-user-container">
+                <div class="user-container">
+                    <div class="user-btn">
+                        <img src="icons/user.png">
+                    </div>
+                </div>
+                <div class="cart-container">
+                    <img src="icons/cart.png">
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+</nav>
+
+<!------{ END NAVIGATION BAR }------>
+
+<!------{ SATRT SHOPPING CART }------>
+
+<main class="shooping-cart">
+    <div class="shopping-cart-alert">
+        <img src="icons/alert.png">
+        <p>No Products</p>
+        <p>Please choose your products from <a href="home.html">home page</a></p>
+    </div>
+    <p class="your-product">Your <span>Products</span></p>
+    <div class="shooping-cart-container shooping-cart-container-by-js">
+        <div class="products-container">
+            <div class="products"></div>
+            <div class="products-prices-details">
+                <div class="prices-total">
+                </div>
+                <div class="home-page-button">
+                    <button onclick="deleteProducts()">Delete All</button>
+                </div>
+                <div class="home-page-button">
+                        <button onclick="getCoupon()">Get coupon</button>
+                    </div>
+                <div class="home-page-button">
+                    <button>
+                        <a href="home.html">Continue shopping</a>
+                    </button>
+                </div>
+            </div>
+            <div class="coupon-container">
+                <p>Enter your coupon code</p>
+                <div class="coupon-form">
+                    <input type="text" placeholder="Enter your code">
+                    <button>Check</button>
+                </div>
+            </div>
+            <span class="note-coupone"></span>
+        </div>
+        <div class="payment-form">
+            <div class="pay-by-paypal">
+                <p>Enter your information</p>
+                <span>Email</span>
+                <input type="text" placeholder="john@gmail.com">
+            </div>
+            <div class="pay-by-visa">
+                <p>Enter your information</p>
+                <span>Card number</span>
+                <input type="text" placeholder="1234 3567 6778 3908">
+                <span>Name of card</span>
+                <input type="text" placeholder="mohamed">
+                <div class="expiry-date-security-code">
+                    <span>Expiry date</span>
+                    <span>Security code</span>
+                </div>
+                <div class="expiry-date-security-code">
+                    <input type="number" placeholder="01 19">
+                    <input type="number" placeholder="****">
+                </div>
+            </div>
+            <form>
+            <div class="check-payment-container">
+                <div class="check-payment">
+                    <div class="payment-option">
+                        <input type="radio" id="paypal" name="checkBox" class="checkBox1 checkBox">
+                        <label for="paypal">
+                            <img src="icons/paypal.png">
+                        </label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="visa" name="checkBox" class="checkBox2 checkBox">
+                        <label for="visa">
+                            <img src="icons/visa.png">
+                        </label>
+                    </div>
+                </div>
+                <div class="buy-button">
+                    <button>Buy now</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<!------{ START GET COUPON }------>
+
+<div class="get-coupon-cover">
+    <div class="get-coupon-container">
+        <div class="output-coupon">
+            <p></p>
+        </div>
+        <div class="copy-coupon-btn">
+            <img src="icons/signs.png">
+        </div>
+    </div>
+</div>
+
+<div class="alert-coupon-cover">
+        <div class="alert-coupon-container">
+            <div class="alert-coupon">
+                <p>Sorry you can get coupon code one time </p>
+            </div>
+            <div class="close-coupon-btn">
+                &times;
+            </div>
+        </div>
+    </div>
+
+<!------{ END GET COUPON }------>
+
+<!------{ END SHOPPING CART }------>
+
+<script src="JavaScript Files/products.js"></script>
+</body>
+</html>
