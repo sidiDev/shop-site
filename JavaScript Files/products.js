@@ -253,3 +253,48 @@ function openClaoseMenu () {
     navigationLinks.classList.toggle('open-and-close-menu')
 
 }
+
+
+// If productsData is Exist
+if (productsData) {
+    
+    //Get productData delete buttons
+    let deleteProductBtn = document.querySelectorAll('.remove-product-btn .remove-btn');
+    //Convert json data to Object 
+    let getProductsData = JSON.parse(localStorage.getItem('productsData'));
+
+    //Loop on productData delete buttons
+    for (let i = 0; i < deleteProductBtn.length; i++) {
+
+        let inCart = getProductsData[Object.keys(getProductsData)[i]].inCart;
+        deleteProductBtn[i].setAttribute('datanum',inCart);
+        deleteProductBtn[i].setAttribute('dataset',Object.keys(getProductsData)[i])
+
+        //When click on productData delete button remove the product from page and localstorage
+        // and reduce the number of products
+        deleteProductBtn[i].onclick = function () {
+
+            let getInCart = Number(this.getAttribute('datanum'));
+            cartContainer.textContent = (cartContainer.textContent - getInCart)
+            localStorage.setItem('addedToCartNumber',Number(cartContainer.textContent));
+
+            let getProductData = this.getAttribute('dataset');
+            this.parentElement.parentElement.remove();
+            delete getProductsData[getProductData];
+            localStorage.setItem('productsData',JSON.stringify(getProductsData))
+            reloadPageAuto()
+        }
+
+    }
+}
+
+//When cartContainer become equal 0 reload page and remove all data from localStorage
+function reloadPageAuto() {
+
+    if (cartContainer.textContent == '0') {
+
+        location.reload();
+        localStorage.removeItem('productsData');
+        localStorage.removeItem('addedToCartNumber')
+    }
+}
