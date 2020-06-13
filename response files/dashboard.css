@@ -694,6 +694,12 @@ nav .navigation-container .cart-and-search-container {
     padding: 5px;
 }
 
+.employees-stats-container .employees-details-columns {
+    margin-top: 7em;
+    color: #ff9800;
+
+}
+
 /* =========== { END DASHBOARD => EMPLOYEEES INFO } ===========*/
 
 /* =========== { START FOOTER } ===========*/
